@@ -9,6 +9,37 @@ const productData = [
 		images: [
 			'https://ss-imager-prod.freetls.fastly.net/www-images/480/product_images/f1f19d0b4f413388031408e47de8b0b8.jpg',
 		],
+		colors: ['Black', 'Broken White', 'Grey', 'Navy', 'Red', 'Tosca'],
+		sizes: [
+			{
+				name: 'S',
+				lingkarDada: 90,
+				panjangLengan: 11,
+				panjang: 90,
+				lingkarPinggang: 94,
+			},
+			{
+				name: 'M',
+				lingkarDada: 94,
+				panjangLengan: 12,
+				panjang: 90,
+				lingkarPinggang: 98,
+			},
+			{
+				name: 'L',
+				lingkarDada: 100,
+				panjangLengan: 12,
+				panjang: 92,
+				lingkarPinggang: 106,
+			},
+			{
+				name: 'XL',
+				lingkarDada: 110,
+				panjangLengan: 13,
+				panjang: 95,
+				lingkarPinggang: 118,
+			},
+		],
 	},
 	{
 		name: 'Zalifa Brukat Flare Mini Dress',
@@ -17,6 +48,37 @@ const productData = [
 		category: 'dress',
 		images: [
 			'https://ss-imager-prod.freetls.fastly.net/www-images/480/product_images/0c0bf8024b8b627db756ddb1f050bee1.jpg',
+		],
+		colors: ['Black', 'Broken White', 'Grey', 'Navy', 'Red', 'Tosca'],
+		sizes: [
+			{
+				name: 'S',
+				lingkarDada: 90,
+				panjangLengan: 11,
+				panjang: 90,
+				lingkarPinggang: 94,
+			},
+			{
+				name: 'M',
+				lingkarDada: 94,
+				panjangLengan: 12,
+				panjang: 90,
+				lingkarPinggang: 98,
+			},
+			{
+				name: 'L',
+				lingkarDada: 100,
+				panjangLengan: 12,
+				panjang: 92,
+				lingkarPinggang: 106,
+			},
+			{
+				name: 'XL',
+				lingkarDada: 110,
+				panjangLengan: 13,
+				panjang: 95,
+				lingkarPinggang: 118,
+			},
 		],
 	},
 	{
@@ -27,6 +89,37 @@ const productData = [
 		images: [
 			'https://ss-imager-prod.freetls.fastly.net/www-images/480/product_images/00cc30c2bcb967a9dbb87fe6f32e2e65.jpg',
 		],
+		colors: ['Black', 'Broken White', 'Grey', 'Navy', 'Red', 'Tosca'],
+		sizes: [
+			{
+				name: 'S',
+				lingkarDada: 90,
+				panjangLengan: 11,
+				panjang: 90,
+				lingkarPinggang: 94,
+			},
+			{
+				name: 'M',
+				lingkarDada: 94,
+				panjangLengan: 12,
+				panjang: 90,
+				lingkarPinggang: 98,
+			},
+			{
+				name: 'L',
+				lingkarDada: 100,
+				panjangLengan: 12,
+				panjang: 92,
+				lingkarPinggang: 106,
+			},
+			{
+				name: 'XL',
+				lingkarDada: 110,
+				panjangLengan: 13,
+				panjang: 95,
+				lingkarPinggang: 118,
+			},
+		],
 	},
 	{
 		name: 'Helsexia Plain V-Neck Mini Dress',
@@ -35,6 +128,37 @@ const productData = [
 		category: 'dress',
 		images: [
 			'https://ss-imager-prod.freetls.fastly.net/www-images/480/product_images/608d4411aad8d3eef5f35235a74bd0a7.jpg',
+		],
+		colors: ['Black', 'Broken White', 'Grey', 'Navy', 'Red', 'Tosca'],
+		sizes: [
+			{
+				name: 'S',
+				lingkarDada: 90,
+				panjangLengan: 11,
+				panjang: 90,
+				lingkarPinggang: 94,
+			},
+			{
+				name: 'M',
+				lingkarDada: 94,
+				panjangLengan: 12,
+				panjang: 90,
+				lingkarPinggang: 98,
+			},
+			{
+				name: 'L',
+				lingkarDada: 100,
+				panjangLengan: 12,
+				panjang: 92,
+				lingkarPinggang: 106,
+			},
+			{
+				name: 'XL',
+				lingkarDada: 110,
+				panjangLengan: 13,
+				panjang: 95,
+				lingkarPinggang: 118,
+			},
 		],
 	},
 	{
@@ -45,6 +169,37 @@ const productData = [
 		images: [
 			'https://ss-imager-prod.freetls.fastly.net/www-images/480/product_images/11dfe4b4a43e83e6d49e8b2eea167491.jpg',
 		],
+		colors: ['Black', 'Broken White', 'Grey', 'Navy', 'Red', 'Tosca'],
+		sizes: [
+			{
+				name: 'S',
+				lingkarDada: 90,
+				panjangLengan: 11,
+				panjang: 90,
+				lingkarPinggang: 94,
+			},
+			{
+				name: 'M',
+				lingkarDada: 94,
+				panjangLengan: 12,
+				panjang: 90,
+				lingkarPinggang: 98,
+			},
+			{
+				name: 'L',
+				lingkarDada: 100,
+				panjangLengan: 12,
+				panjang: 92,
+				lingkarPinggang: 106,
+			},
+			{
+				name: 'XL',
+				lingkarDada: 110,
+				panjangLengan: 13,
+				panjang: 95,
+				lingkarPinggang: 118,
+			},
+		],
 	},
 	{
 		name: 'Elhepone Flowery Cold Shoulder Mini Dress',
@@ -54,12 +209,48 @@ const productData = [
 		images: [
 			'https://ss-imager-prod.freetls.fastly.net/www-images/480/product_images/fbd2b5a3a1e1bdbafe0a42a0c19f1509.jpg',
 		],
+		colors: ['Black', 'Broken White', 'Grey', 'Navy', 'Red', 'Tosca'],
+		sizes: [
+			{
+				name: 'S',
+				lingkarDada: 90,
+				panjangLengan: 11,
+				panjang: 90,
+				lingkarPinggang: 94,
+			},
+			{
+				name: 'M',
+				lingkarDada: 94,
+				panjangLengan: 12,
+				panjang: 90,
+				lingkarPinggang: 98,
+			},
+			{
+				name: 'L',
+				lingkarDada: 100,
+				panjangLengan: 12,
+				panjang: 92,
+				lingkarPinggang: 106,
+			},
+			{
+				name: 'XL',
+				lingkarDada: 110,
+				panjangLengan: 13,
+				panjang: 95,
+				lingkarPinggang: 118,
+			},
+		],
 	},
 ]
 
 Product.getAll = async (req, res, next) => {
-	const response = { error: 0, message: 'success', data: productData }
+	const productList = productData.map(product => {
+		delete product.colors
+		delete product.sizes
+		return product
+	})
 
+	const response = { error: 0, message: 'success', data: productList }
 	return res.send(response)
 }
 
@@ -72,7 +263,6 @@ Product.getSingleBySlug = async (req, res, next) => {
 	}
 
 	const response = { error: 404, message: 'Not Found', data: {} }
-
 	return res.status(404).send(response)
 }
 
