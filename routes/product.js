@@ -5,4 +5,6 @@ const Product = require('../controllers/product')
 
 router.get('/', Product.getAll)
 
+router.get('/:slug', Product.getSingleBySlug)
+
 module.exports = router

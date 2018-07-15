@@ -60,7 +60,20 @@ const productData = [
 Product.getAll = async (req, res, next) => {
 	const response = { error: 0, message: 'success', data: productData }
 
-	res.send(response)
+	return res.send(response)
+}
+
+Product.getSingleBySlug = async (req, res, next) => {
+	const selectedProduct = productData.find(i => i.slug === req.params.slug)
+
+	if (selectedProduct) {
+		const response = { error: 0, message: 'success', data: selectedProduct }
+		return res.send(response)
+	}
+
+	const response = { error: 404, message: 'Not Found', data: {} }
+
+	return res.status(404).send(response)
 }
 
 module.exports = Product
