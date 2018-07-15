@@ -9,9 +9,11 @@ app.use(morgan('dev'))
 
 const apiRoutes = require('./routes/api')
 const productRoutes = require('./routes/product')
+const promoRoutes = require('./routes/promo')
 
 app.use('/api', apiRoutes)
 app.use('/api/products', productRoutes)
+app.use('/api/promos', promoRoutes)
 
 app.use('*', (req, res) => {
 	res.status(404).send({
