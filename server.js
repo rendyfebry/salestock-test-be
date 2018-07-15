@@ -8,9 +8,10 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(morgan('dev'))
 
 const apiRoutes = require('./routes/api')
+const productRoutes = require('./routes/product')
 
-// projet api
 app.use('/api', apiRoutes)
+app.use('/api/products', productRoutes)
 
 app.use('*', (req, res) => {
 	res.status(404).send({
