@@ -1,12 +1,26 @@
 const express = require('express')
-const app = express()
+const bodyParser = require('body-parser')
+const morgan = require('morgan')
 
-// respond with "hello world" when a GET request is made to the homepage
-app.get('/', (req, res) => {
-	res.send('hello world')
+const app = express()
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }))
+app.use(morgan('dev'))
+
+const apiRoutes = require('./routes/api')
+
+// projet api
+app.use('/api', apiRoutes)
+
+app.use('*', (req, res) => {
+	res.status(404).send({
+		error: 404,
+		message: 'Not Found',
+		data: [],
+	})
 })
 
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 
 app.listen(PORT, () => {
 	console.log(`Listening on :${PORT}`)
