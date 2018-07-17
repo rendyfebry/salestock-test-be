@@ -1,6 +1,4 @@
-const db = require('../models/db')
-
-const products = db.get('product')
+const ProductModel = require('../models/product')
 
 const Product = {}
 
@@ -9,16 +7,8 @@ Product.getAll = async (req, res, next) => {
 	const limit = parseInt(req.query.perPage) || 3
 	const skip = (page - 1) * limit
 
-	const productList = await products.find(
-		{},
-		{
-			fields: { _id: 0, colors: 0, sizes: 0 },
-			skip: skip,
-			limit: limit,
-		},
-	)
-
-	const productTotal = await products.count()
+	const productList = await ProductModel.getAll(limit, skip)
+	const productTotal = await ProductModel.countTotal()
 
 	if (productList && productList.length > 0) {
 		const response = {
@@ -35,7 +25,7 @@ Product.getAll = async (req, res, next) => {
 }
 
 Product.getSingleBySlug = async (req, res, next) => {
-	const selectedProduct = await products.findOne({ slug: req.params.slug }, { _id: 0 })
+	const selectedProduct = await ProductModel.getSingleBySlug(req.params.slug)
 
 	if (selectedProduct) {
 		const response = { error: 0, message: 'success', data: selectedProduct }
