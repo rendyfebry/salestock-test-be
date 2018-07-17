@@ -5,9 +5,10 @@ const Product = {}
 Product.getAll = async (req, res, next) => {
 	const page = parseInt(req.query.page) || 1
 	const limit = parseInt(req.query.perPage) || 3
+	const sort = req.query.sort || 'newest'
 	const skip = (page - 1) * limit
 
-	const productList = await ProductModel.getAll(limit, skip)
+	const productList = await ProductModel.getAll(limit, skip, sort)
 	const productTotal = await ProductModel.countTotal()
 
 	if (productList && productList.length > 0) {
